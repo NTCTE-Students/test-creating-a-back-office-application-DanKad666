@@ -13,6 +13,21 @@ use Orchid\Support\Color;
 class PlatformProvider extends OrchidServiceProvider
 {
     /**
+    * @return ItemMenu[]
+    */
+    public function registerMainMenu(): array
+    {
+        return [
+            // Другие пункты меню...
+    
+            Menu::make('Email sender')
+                ->icon('envelope-letter')
+                ->route('platform.email')
+                ->title('Tools')
+        ];
+    }
+
+    /**
      * Bootstrap the application services.
      *
      * @param Dashboard $dashboard

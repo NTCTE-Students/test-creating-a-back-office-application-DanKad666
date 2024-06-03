@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Orchid\Support\Facades\Dashboard;
 
 class AppServiceProvider extends ServiceProvider
 {
